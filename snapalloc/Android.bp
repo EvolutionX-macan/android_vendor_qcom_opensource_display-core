@@ -1,5 +1,7 @@
 cc_library_shared {
     name: "vendor.qti.hardware.display.snapalloc-impl",
+    // The device installs the matching stock OxygenOS gralloc instead.
+    enabled: false,
     sanitize: {
         integer_overflow: true,
     },
